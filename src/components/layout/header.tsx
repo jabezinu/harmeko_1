@@ -13,18 +13,18 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] rounded-2xl bg-primary/80 px-8 py-3 shadow-md shadow-secondary/50 backdrop-blur-md text-foreground/90">
+      <div className="container flex h-14 max-w-screen-2xl items-center text-foreground">
         {/* Logo/Brand Name */}
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Coffee className="h-6 w-6 text-primary" />
-          <span className="font-bold sm:inline-block text-primary">
+          <span className="font-bold sm:inline-block text-foreground">
             Harmeko Coffee
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden flex-1 items-center space-x-6 text-sm font-medium md:flex">
+        <nav className="hidden flex-1 items-center space-x-6 text-sm font-medium md:flex ">
           {navItems.map((item) => (
             <Link
               key={item.name}
