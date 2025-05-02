@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center bg-gradient-to-br from-primary via-secondary to-primary text-primary-foreground px-4 sm:px-6 lg:px-8">
+      <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center bg-secondary text-primary-foreground px-4 sm:px-6 lg:px-8">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-10"
           data-ai-hint="coffee shop interior cozy"
@@ -25,8 +25,8 @@ export default function Home() {
             <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground transition-default shadow-md">
               <Link href="/menu">View Our Menu</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 transition-default shadow-md">
-              <Link href="/contact">Find Us</Link>
+            <Button size="lg" variant="outline" asChild className="border-4 border-white text-white hover:bg-primary-foreground/10 transition-default shadow-md">
+              <Link href="/contact" >Find Us</Link>
             </Button>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-16 bg-secondary text-secondary-foreground">
+      <section className="py-16 bg-primary text-secondary-foreground">
         <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-6">Ready for Your Coffee Moment?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto text-secondary-foreground/90">
